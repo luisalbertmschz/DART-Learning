@@ -1,10 +1,17 @@
 
+import 'dart:mirrors';
+
 main() {
 
   // ===== Números
   int a = 10;
   double b = 5.5;
 
+
+  // Sin innetamos ejecutar hasta este punto la declaración de la variable c ej:
+  // " int c" esto lanzará Null Safety por lo que lo ideal es inicializar la variable
+  // de forma correcta con el simbolo de interrogacion 
+  
   int? c;
 
   int _a = 30;
@@ -15,10 +22,28 @@ main() {
   // print( resultado );
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // ===== String 
 
   String nombre  = 'Tony';
-  String nombre2 = "Tony";
+  String nombre2 = "Elver Dades";
   String nombre3 = "O'Connor";
   String apellido = 'Stark';
 
