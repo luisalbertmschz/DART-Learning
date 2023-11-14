@@ -5,7 +5,7 @@ main() {
   String continuar = 'y';
   int contador = 0;
 
-  while ( continuar == 'y' ) {
+  do {
 
     contador++;
     stdout.writeln('Contador: $contador');
@@ -14,7 +14,7 @@ main() {
     continuar = stdin.readLineSync() ?? 'n';
     
 
-  }
+  } while ( continuar == 'y' );
 
   // 
 

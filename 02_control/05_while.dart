@@ -10,7 +10,7 @@ main() {
     contador++;
     stdout.writeln('Contador: $contador');
 
-    stdout.writeln('desea continuar? (y/n)');
+    stdout.writeln('¿Deseas continuar? (y/n)');
     continuar = stdin.readLineSync() ?? 'n';
     
 
