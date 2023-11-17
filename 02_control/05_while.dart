@@ -1,7 +1,8 @@
 import 'dart:io';
 
-main() {
+void main(List<String> args) {
 
+  
   String continuar = 'y';
   int contador = 0;
 
@@ -10,12 +11,10 @@ main() {
     contador++;
     stdout.writeln('Contador: $contador');
 
-    stdout.writeln('¿Deseas continuar? (y/n)');
+    stdout.writeln('desea continuar? (y/n)');
     continuar = stdin.readLineSync() ?? 'n';
     
 
   }
-
-  // 
-
+  
 }
