@@ -8,9 +8,7 @@
 import 'dart:io';
 
 
-void PrintMessage(){
-  
-}
+
 
 main() {
 
@@ -21,13 +19,13 @@ main() {
   stdout.writeln('=========== Usuario 1 =============');
 
 
-  stdout.writeln('¿Cúal es su nombre?');
+  PrintMessage('¿Cúal es su nombre?');
   String nombre = stdin.readLineSync() ?? '';
 
-  stdout.writeln('¿Qué edad tienes?');
+  PrintMessage('¿Qué edad tienes?');
   String edad = stdin.readLineSync() ?? '';
   
-  stdout.writeln('¿En qué país naciste?');
+  PrintMessage('¿En qué país naciste?');
   String pais = stdin.readLineSync() ?? '';
   
 
@@ -37,8 +35,8 @@ main() {
     'pais'  : pais
   };
 
-  stdout.writeln('Usuario 1 sin deducciones');
-  stdout.writeln( usuario );
+  PrintMessage('Usuario 1 sin deducciones');
+  PrintMessage( usuario );
 
   double salario     = 1500;
   double deducciones = salario * 0.15;
@@ -84,4 +82,6 @@ main() {
   stdout.writeln(usuario2);
 
 }
+
+void imprimirmsg(String texto) => stdout.writeln(texto);
 
