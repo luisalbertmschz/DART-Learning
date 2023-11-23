@@ -16,16 +16,16 @@ main() {
   // Crear una función para imprimir STDOUTS en lugar de 
   // la siguiente línea. Luego todos los stdouts deberían ser
   // llamados usando nuestra función personalizada
-  stdout.writeln('=========== Usuario 1 =============');
+  imprimirmsg('=========== Usuario 1 =============');
 
 
-  PrintMessage('¿Cúal es su nombre?');
+  imprimirmsg('¿Cúal es su nombre?');
   String nombre = stdin.readLineSync() ?? '';
 
-  PrintMessage('¿Qué edad tienes?');
+  imprimirmsg('¿Qué edad tienes?');
   String edad = stdin.readLineSync() ?? '';
   
-  PrintMessage('¿En qué país naciste?');
+  imprimirmsg('¿En qué país naciste?');
   String pais = stdin.readLineSync() ?? '';
   
 
@@ -35,8 +35,8 @@ main() {
     'pais'  : pais
   };
 
-  PrintMessage('Usuario 1 sin deducciones');
-  PrintMessage( usuario );
+  imprimirmsg('Usuario 1 sin deducciones');
+  imprimirmsg( usuario.toString() );
 
   double salario     = 1500;
   double deducciones = salario * 0.15;
@@ -46,19 +46,19 @@ main() {
   usuario['deducciones'] = deducciones;
   usuario['salarioNeto'] = salarioNeto;
 
-  stdout.writeln(usuario);
+  imprimirmsg(usuario.toString());
 
 
   // Persona 2
-  stdout.writeln('=========== Usuario 2 =============');
+  imprimirmsg('=========== Usuario 2 =============');
 
-  stdout.writeln('¿Cúal es su nombre?');
+  imprimirmsg('¿Cúal es su nombre?');
   String nombre2 = stdin.readLineSync() ?? '';
 
-  stdout.writeln('¿Qué edad tienes?');
+  imprimirmsg('¿Qué edad tienes?');
   String edad2 = stdin.readLineSync() ?? '';
   
-  stdout.writeln('¿En qué país naciste?');
+  imprimirmsg('¿En qué país naciste?');
   String pais2 = stdin.readLineSync() ?? '';
   
 
@@ -68,8 +68,8 @@ main() {
     'pais'  : pais2
   };
 
-  stdout.writeln('Usuario 2 sin deducciones');
-  stdout.writeln( usuario2 );
+  imprimirmsg('Usuario 2 sin deducciones');
+  imprimirmsg(usuario2.toString());
 
   double salario2     = 1800;
   double deducciones2 = salario2 * 0.15;
@@ -79,9 +79,10 @@ main() {
   usuario2['deducciones'] = deducciones2;
   usuario2['salarioNeto'] = salarioNeto2;
 
-  stdout.writeln(usuario2);
+  imprimirmsg(usuario2.toString());
 
 }
 
 void imprimirmsg(String texto) => stdout.writeln(texto);
+
 
