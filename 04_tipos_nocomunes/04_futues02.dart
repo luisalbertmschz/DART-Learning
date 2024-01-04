@@ -11,7 +11,7 @@ Future<String> f = file.readAsString();
 
 
 
-f.then()
+f.then(print);
 
 print('Fin del main');
 
